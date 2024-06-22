@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dell.blackboard">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.apps.photos.permission.GOOGLE_PHOTOS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.dell.blackboard.activities.MyClass"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.dell.blackboard.activities.FacultyCheckIndivStudentSubmissionActivity" />
+        <activity android:name="com.dell.blackboard.activities.AssignmentViewerActivity" />
+        <activity android:name="com.dell.blackboard.activities.AssignmentCreationActivity" />
+        <activity android:name="com.dell.blackboard.activities.AssignmentHome" />
+        <activity android:name="com.dell.blackboard.activities.StudentListActivity" />
+        <activity android:name="com.dell.blackboard.activities.ShowAttendanceActivity" />
+        <activity android:name="com.dell.blackboard.activities.CreatePostActivity" />
+        <activity android:name="com.dell.blackboard.activities.AboutActivity" />
+        <activity android:name="com.dell.blackboard.activities.AdminFeedbackActivity" />
+        <activity android:name="com.dell.blackboard.activities.FeedbackActivity" />
+        <activity android:name="com.dell.blackboard.activities.ResourceBucketActivity" />
+        <activity
+            android:name="com.dell.blackboard.activities.CommentActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.dell.blackboard.activities.HelloActivity" />
+        <activity android:name="com.dell.blackboard.activities.ChatActivity" />
+        <activity
+            android:name="com.dell.blackboard.activities.ProfileNewActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity android:name="com.dell.blackboard.activities.SettingsActivity" />
+        <activity android:name="com.dell.blackboard.activities.CreatePollActivity" />
+        <activity
+            android:name="com.dell.blackboard.activities.SignupActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity
+            android:name="com.dell.blackboard.activities.SplashActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.dell.blackboard.activities.NewAttendenceAcitivity" />
+        <activity android:name="com.dell.blackboard.activities.CheckAttendanceActivity" />
+        <activity
+            android:name="com.dell.blackboard.activities.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.dell.blackboard.activities.LoginActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+
+        <service android:name="com.dell.blackboard.FirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

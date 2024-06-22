@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout5"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+
+    <EditText
+        android:id="@+id/et_broadcastTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:foregroundGravity="center"
+        android:gravity="center_horizontal"
+        android:hint="Broadcast Title"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_broadcast_message"
+        android:layout_width="280dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:hint="Broadcast Message"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_broadcastTitle" />
+
+    <LinearLayout
+        android:id="@+id/dateLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_broadcast_message">
+
+        <EditText
+            android:id="@+id/et_date01"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="From Date"
+            android:inputType="date"
+            android:textAlignment="center"
+            android:visibility="invisible"
+            tools:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/et_date02"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:hint="To Date"
+            android:inputType="date"
+            android:textAlignment="center"
+            android:visibility="invisible"
+            tools:visibility="invisible" />
+    </LinearLayout>
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup_admin_notify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateLayout">
+
+
+        <RadioButton
+            android:id="@+id/rb_broadcast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="10dp"
+            android:text="Broadcast" />
+
+        <RadioButton
+            android:id="@+id/rb_classShift"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="10dp"
+            android:text="Class Shift" />
+
+        <RadioButton
+            android:id="@+id/rb_classCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="5dp"
+            android:text="Class Cancel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rb_classShift" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/bt_notify_broadcast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:text="Done"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bt_cancelBroadcast"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup_admin_notify" />
+
+    <Button
+        android:id="@+id/bt_cancelBroadcast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@null"
+        android:text="Cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup_admin_notify" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

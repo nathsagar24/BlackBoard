@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "181631215140",
+    "firebase_url": "https://blackboard-8a3b9.firebaseio.com",
+    "project_id": "blackboard-8a3b9",
+    "storage_bucket": "blackboard-8a3b9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:181631215140:android:4b300291196508d8ef9ab1",
+        "android_client_info": {
+          "package_name": "com.dell.blackboard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "181631215140-en7rpmpvtnql61g2roer5604jnu036pf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dell.blackboard",
+            "certificate_hash": "b0d7c5d31e94a5a0fefa29dc24e1ba7db52170b7"
+          }
+        },
+        {
+          "client_id": "181631215140-il6murv81c6jm7h8pgv8ir5ts454g4g1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9w31irbqi7pn5DbCan14fxjoy_MkalOs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "181631215140-il6murv81c6jm7h8pgv8ir5ts454g4g1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
